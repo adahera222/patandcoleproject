@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{3206A34B-A982-C1F3-9FB5-19237026CD73}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_5;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\FingerGestures\Components\Base\AveragedGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\Base\FGComponent.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\Base\GestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\Base\MultiFingerGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\DragGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\FingerMotionDetector.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\LongPressGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\MousePinchGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\PinchGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\RotationGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\SwipeGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Components\TapGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\FingerGestures.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\FingerGesturesInitializer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\FingerGesturesPrefabs.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\MouseGestures.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\TouchScreenGestures.cs" />
+     <None Include="Assets\Shaders\Mobile\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Shaders\Mobile\Particle Shaders\Mobile Multiply Culled.shader" />
+     <None Include="Assets\Fonts\Font.txt" />
+     <None Include="Assets\Readme.txt" />
+     <None Include="Assets\Shaders\Mobile\Miscellaneous Shaders\Mobile Background.shader" />
+     <None Include="Assets\ThirdParty\EZ GUI\Plugins\AnBSoft Common\Standard Shaders\Sprite Cutout.shader" />
+     <None Include="Assets\Shaders\Mobile\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
+     <None Include="Assets\Shaders\Mobile\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Shaders\Mobile\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Shaders\Mobile\Vertex Colored Shaders\Mobile Transparent Vertex Lit.shader" />
+     <None Include="Assets\Shaders\Mobile\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Shaders\Mobile\Miscellaneous Shaders\Mobile Detail.shader" />
+     <None Include="Assets\ThirdParty\EZ GUI\Plugins\AnBSoft Common\Standard Shaders\Transparent Vertex Colored.shader" />
+     <None Include="Assets\Shaders\Mobile\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+ <Reference Include="PatStuff">
+ <HintPath>Assets\Plugins\PatStuff.dll</HintPath>
+ </Reference>
+ <Reference Include="HOTween">
+ <HintPath>Assets\ThirdParty\HOTween\Plugins\HOTween.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
